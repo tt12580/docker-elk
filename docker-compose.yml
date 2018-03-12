@@ -35,11 +35,11 @@ services:
     volumes:
       - ./filebeat/config/filebeat.yml:/usr/share/filebeat/filebeat.yml
       - ./filebeat/registry:/etc/registry
-      - /Users/nhsoft/work/pintuan-dashboard/log:/dashboard
+      - /Users/nhsoft/work/pintuan-dashboard/log:/demo
     networks:
       - elk
     extra_hosts:
-      - "logstash:192.168.0.131"
+      - "logstash:101.132.191.3"
     depends_on:
       - logstash
 
