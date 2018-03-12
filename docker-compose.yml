@@ -35,7 +35,7 @@ services:
     volumes:
       - ./filebeat/config/filebeat.yml:/usr/share/filebeat/filebeat.yml
       - ./filebeat/registry:/etc/registry
-      - /Users/nhsoft/work/pintuan-dashboard/log:/demo
+      - /home/deploy/demo/log:/demo
     networks:
       - elk
     extra_hosts:
